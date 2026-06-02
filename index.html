@@ -29,7 +29,17 @@
 
 				
 				<h1>hate me? want me to die?</h1>
-				<li><h1><a href="randompage.html">click here for something better to do</a></h1></li>
+				<li><h1><a randomSite">click here for something better to do</a></h1></li>
+				
+				<script>
+    import siteList from './assets/sitelist.txt?raw';
+    const sites = siteList.split('\n')
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
 
 			</section>
 		</main>
